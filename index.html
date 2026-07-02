@@ -1,427 +1,395 @@
 <!doctype html>
 <html>
+	<head>
 
-<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, user-scalable=no, minimal-ui'>
 
-  <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width, user-scalable=no, minimal-ui'>
+	<title>Ivan Pintado</title>
 
-  <title>Ivan Pintado</title>
+	<style>
+	body {
+  background: #EEEEEE;
+  font: 12.5px "Times New Roman", Times, sans-serif;
+  line-height: 1.3;
+  margin: 40px 0;
+}
+em {
+  color: #999;
+}
+p {
+  line-height: 1.4;
+}
+ul {
+  margin-bottom: 0;
+}
+li {
+  margin-bottom: 2px;
+}
+a {
+  text-decoration: none;
+}
 
-  <style>
-    body {
-      background: #EEEEEE;
-      font: 13.5px "Times New Roman", Times, sans-serif;
-      line-height: 1.3;
-      margin: 40px 0;
-    }
+#resume {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 80px 100px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px #aaa;
+  -webkit-box-shadow: 2px 2px 4px #aaa;
+}
 
-    em {
-      color: #999;
-    }
+.coursesList {
+  width: 28%;
+  vertical-align: top;
+  display: inline-block;
+}
 
-    p {
-      line-height: 1.4;
-    }
+.largeFont {
+  font-size: 20px;
+}
 
-    ul {
-      margin-bottom: 0;
-    }
+.smallFont {
+  font-size: 13px;
+}
 
-    li {
-      margin-bottom: 2px;
-    }
+.sectionBlock {
+  display: flex;
+  width: 100%;
+}
 
-    a {
-      text-decoration: none;
-    }
+.sectionName {
+  width: 18%;
+  vertical-align: top;
+  display: inline-block;
+}
 
-    #resume {
-      margin: 0 auto;
-      max-width: 45%;
-      padding: 80px 100px;
-      background: #fff;
-      border: 1px solid #ccc;
-      box-shadow: 2px 2px 4px #aaa;
-      -webkit-box-shadow: 2px 2px 4px #aaa;
-    }
+.sectionContent {
+  width: 100%;
+  vertical-align: top;
+  display: inline-block;
+}
 
-    .coursesList {
-      width: 28%;
-      vertical-align: top;
-      display: inline-block;
-    }
+.sectionContent ul {
+  padding-left: 20px;
+  margin-top: 6px;
+  list-style-type: circle;
+}
 
-    .largeFont {
-      font-size: 20px;
-    }
+.sectionContent .title {
+  font-weight: bold;
+}
 
-    .smallFont {
-      font-size: 13px;
-    }
+.sectionContent .date {
+  float: right;
+  font-weight: bold;
+}
 
-    .sectionBlock {
-      display: flex;
-      width: 100%;
-    }
+.sectionContent .separator {
+  height: 14px;
+}
 
-    .sectionName {
-      width: 18%;
-      vertical-align: top;
-      display: inline-block;
-    }
+.sectionLine {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #CFCFCF;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
-    .sectionContent {
-      width: 100%;
-      vertical-align: top;
-      display: inline-block;
-    }
+.divider {
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
-    .sectionContent ul {
-      padding-left: 20px;
-      margin-top: 6px;
-      list-style-type: circle;
-    }
+.summary {
+  margin-top: 6px;
+}
 
-    .sectionContent .title {
-      font-weight: bold;
-    }
+.skillBlock {
+  margin-bottom: 4px;
+}
 
-    .sectionContent .date {
-      float: right;
-      font-weight: bold;
-    }
+.jobBlock {
+  page-break-inside: avoid;
+}
 
-    .sectionContent .separator {
-      height: 14px;
-    }
+/* Media Queries */
+@media only screen and (max-width: 40em) {
+  body {
+    margin: 0;
+    font-size: 14px;
+  }
+  #resume {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0.5em 1em;
+    border: none;
+  }
+  .sectionBlock {
+    flex-direction: column;
+  }
+  .sectionContent {
+    width: 100%;
+  }
+  .sectionContent .date {
+    padding-right: 2em;
+  }
+  .sectionName {
+    width: auto;
+  }
+  .largeFont {
+    font-size: 20px;
+  }
+  .smallFont {
+    font-size: 14px;
+  }
+}
 
-    .sectionLine {
-      border-style: dashed;
-      border-width: 1px;
-      border-color: #CFCFCF;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
+@media print {
+  body {
+    background: #FFFFFF;
+  }
+  #resume {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0px 0px;
+    border: 0px;
+    background: #fff;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
 
-    .divider {
-      font-weight: bold;
-      margin-left: 5px;
-      margin-right: 5px;
-    }
+  a {
+    color: black;
+  }
+}
 
-    .summary {
-      margin-top: 6px;
-    }
+	</style>
 
-    .skillBlock {
-      margin-bottom: 4px;
-    }
+	</head>
+	<body>
 
-    .jobBlock {
-      page-break-inside: avoid;
-    }
-
-    /* Media Queries */
-    @media only screen and (max-width: 40em) {
-      body {
-        margin: 0;
-        font-size: 14px;
-      }
-
-      #resume {
-        margin: 0 auto;
-        max-width: 600px;
-        padding: 0.5em 1em;
-        border: none;
-      }
-
-      .sectionBlock {
-        flex-direction: column;
-      }
-
-      .sectionContent {
-        width: 100%;
-      }
-
-      .sectionContent .date {
-        padding-right: 2em;
-      }
-
-      .sectionName {
-        width: auto;
-      }
-
-      .largeFont {
-        font-size: 20px;
-      }
-
-      .smallFont {
-        font-size: 14px;
-      }
-    }
-
-    @media print {
-      body {
-        background: #FFFFFF;
-      }
-
-      #resume {
-        margin: 0 auto;
-        max-width: 600px;
-        padding: 0px 0px;
-        border: 0px;
-        background: #fff;
-        box-shadow: none;
-        -webkit-box-shadow: none;
-      }
-
-      a {
-        color: black;
-      }
-    }
-  </style>
-
-</head>
-
-<body>
-
-  <div id='resume'>
-    <div id='nameBlock' class='largeFont'>
-      <span class='name'>
-        Ivan Pintado,
-      </span>
-      <span class='label'>Senior Software Engineer</span>
-    </div>
-    <div id='basicsBlock' class='smallFont'>
-      <div class='contactBlock'>
-        <span class='email'>ivan.pintadoh@gmail.com</span>
+	<div id='resume'>
+  <div id='nameBlock' class='largeFont'>
+    <span class='name'>
+      Ivan Pintado,
+    </span>
+    <span class='label'>Senior Software Engineer</span>
+  </div>
+  <div id='basicsBlock' class='smallFont'>
+    <div class='contactBlock'>
+      <span class='email'>ivan.pintadoh@gmail.com</span>
         <span class='divider'>|</span>
         <span class='address'>
-          Irvine, California
+          Los Angeles, California
         </span>
-      </div>
+    </div>
       <div id='profilesBlock'>
-        <span class='url'>
-          <a href='https://github.com/ivanph'>https://github.com/ivanph</a>
+            <span class='url'>
+              <a href='https://github.com/ivanph'>https://github.com/ivanph</a>
+            </span>
+            <span class='divider'>|</span>
+            <span class='url'>
+              <a href='https://www.linkedin.com/in/ivan-pintado/'>https://www.linkedin.com/in/ivan-pintado/</a>
+            </span>
+            
+      </div>
+  </div>
+  <div class='sectionLine'></div>
+
+  <div id='summaryBlock' class="sectionBlock">
+    <div class='sectionName'>
+      <span>SUMMARY</span>
+    </div>
+    <div class='sectionContent'>
+      <span>Experienced senior software engineer skilled in building distributed systems, mobile applications, and developer platforms. Currently serving as Staff Software Engineer at Endpoint, where I lead backend architecture and AI integrations for the customer platform. Proficient with Node.js, GraphQL, cloud infrastructure, and mobile development (Android/Kotlin, React Native). Passionate about system design, engineering quality, and mentoring teams.</span>
+    </div>
+  </div>
+  <div class='sectionLine'></div>
+
+  <div id='workBlock' class="sectionBlock">
+    <div class='sectionName'>
+      <span>EXPERIENCE</span>
+    </div>
+    <div class='sectionContent'>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          Endpoint - Staff Software Engineer
+	        </span>
+	        <span class='date'>
+	          August 2025 &mdash; Present
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <br/>
+              <div class='sectionContent'>
+          	<span>Technical lead on a team building the next generation of our customer platform. Provide overall architectural feedback to a team of senior and mid-level engineers. Main backend developer for integrations with the wider organization&#x27;s distributed systems. Work closely with management and product on the overall direction of the product and evaluation of new features. Develop AI-oriented integrations, including several MCP tools, agentic workflows, and prompt structures.</span>
+              </div>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          Endpoint - Senior Software Engineer
+	        </span>
+	        <span class='date'>
+	          January 2021 &mdash; August 2025
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <br/>
+              <div class='sectionContent'>
+          	<span>Our team focused on providing contacts management for our whole platform. This included interactions from almost every other service and clients both internal and external.</span>
+              </div>
+	      <ul class='highlights'>
+	        <li>Built a relationship system for hierarchical contact management with dynamic transaction-based conditions, reducing errors from manual contact aggregation and improving transaction turnaround time</li>
+	        <li>Improved engineering quality within the team through guidance and best practices</li>
+	        <li>Identified and removed several N+1 query issues in our GraphQL BFF, providing guidelines to avoid common pitfalls</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          Medl Mobile - Software Engineer
+	        </span>
+	        <span class='date'>
+	          July 2020 &mdash; December 2020
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <br/>
+              <div class='sectionContent'>
+          	<span>Working on a variety of projects, mostly focused on Web and Mobile with React (Native)</span>
+              </div>
+	      <ul class='highlights'>
+	        <li>Implemented a MediaUploader component that allows user to upload videos or photos</li>
+	        <li>Created a native module that allows us to encode video on Android before ulpload to reduce the size</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          Cercacor Labs - Senior Software Engineer (Mobile/Backend)
+	        </span>
+	        <span class='date'>
+	          May 2018 &mdash; May 2020
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <br/>
+              <div class='sectionContent'>
+          	<span>Our most recent project focuses on creating a lifestyle application focused on people that are pre-diabetics or diabetics. It offers meal tracking, insulin and glucose monitoring and educational content.</span>
+              </div>
+	      <ul class='highlights'>
+	        <li>Lead backend developer, focusing more on system architecture, design and code reviews.</li>
+	        <li>Interviewed candidates for our backed team and provided hiring feedback.</li>
+	        <li>Started development on the Android app, leveraging modern Android architecture and Kotlin.</li>
+	        <li>Provided support for the iOS team, helping them debug issues when using our REST API.</li>
+	        <li>Designed and developed a chat system for patients to chat one-on-one with clinicians during the COVID-19 emergency.</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          Cercacor Labs - Software Engineer (Backend)
+	        </span>
+	        <span class='date'>
+	          April 2014 &mdash; May 2018
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <br/>
+              <div class='sectionContent'>
+          	<span>Ember is a non-invasive tracker that helps high performance athletes monitor their oxygen levels, pulse rate variability and others. </span>
+              </div>
+	      <ul class='highlights'>
+	        <li>Main developer for the backend system that allowed users to create accounts and synchronize measurement data.</li>
+	        <li>Designed our cloud architecture using AWS while maintaining a low operation cost.</li>
+	        <li>Successfully migrated our data with zero downtime from MongoDB to Postgres.</li>
+	        <li>Created data pipelines to anonymize and copy measurements for data analysis.</li>
+	        <li>Led the development in porting our iOS app to Android using React Native</li>
+	        <li>The tech stack included Node, Postgres, MongoDB, Couchbase and iOS/Android</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          Cercacor Labs - Software Engineer (Native apps)
+	        </span>
+	        <span class='date'>
+	          August 2012 &mdash; April 2014
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <br/>
+              <div class='sectionContent'>
+          	<span>Apps and middleware developer for a medical device and tablet hybrid. The device was capable of taking glucose measurements, pulse rate, and others.</span>
+              </div>
+	      <ul class='highlights'>
+	        <li>Developed common apps from scratch for our custom Linux OS, such as a wifi settings, calculator, phone and contacts.</li>
+	        <li>Contributed to middleware layer design and integration.</li>
+	        <li>Designed and implemented connectivity system integration for phone, wifi and data using libraries such as connman, ofono and bluz.</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          University of Veracruz - Web Developer
+	        </span>
+	        <span class='date'>
+	          February 2012 &mdash; August 2012
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <br/>
+              <div class='sectionContent'>
+          	<span>The university embarked on a massive migration of all it&#x27;s web pages from a custom CMS to Wordpress. I provided custom plugins and web pages to feed the needs of different departments.</span>
+              </div>
+	      <ul class='highlights'>
+	        <li>Develop custom plugins to provide directions and weather information.</li>
+	        <li>Created custom widgets for site admins to configure the plugins.</li>
+	      </ul>
+	      
+			</div>
+    </div>
+  </div>
+  <div class='sectionLine'></div>
+
+
+
+
+	<div id='education' class="sectionBlock">
+    <div class='sectionName'>
+      <span>EDUCATION</span>
+    </div>
+    <div class='sectionContent'>
+      <div class='educationBlock'>
+        <span class='title'>
+          Universidad Veracruzana
         </span>
-        <span class='divider'>|</span>
-        <span class='url'>
-          <a href='https://twitter.com/ivanph'>https://twitter.com/ivanph</a>
+        <span class='date'>
+          June 2007 &mdash; February 2012
         </span>
-        <span class='divider'>|</span>
-        <span class='url'>
-          <a href='https://www.linkedin.com/in/ivan-pintado/'>https://www.linkedin.com/in/ivan-pintado/</a>
-        </span>
-
+        <div class=''>
+          Bachelor  - Software Engineering
+        </div>
       </div>
+      
     </div>
-    <div class='sectionLine'></div>
-
-    <div id='summaryBlock' class="sectionBlock">
-      <div class='sectionName'>
-        <span>SUMMARY</span>
-      </div>
-      <div class='sectionContent'>
-        <span>I&#x27;ve been working as a professional developer since 2012. My experience has been a mix
-          of native applications, web development, and mobile, primarily in Node.js, Qt, Java and Kotlin. I currently
-          focus on building backend services using Node.js but I&#x27;m always open to learning new technologies.</span>
-      </div>
-    </div>
-    <div class='sectionLine'></div>
-
-    <div id='workBlock' class="sectionBlock">
-      <div class='sectionName'>
-        <span>EXPERIENCE</span>
-      </div>
-      <div class='sectionContent'>
-        <div class="jobBlock">
-          <div class='blockHeader'>
-            <span class='title'>
-              Medl Mobile - Software Engineer
-            </span>
-            <span class='date'>
-              July 2020 &mdash; Present
-            </span>
-          </div>
-          <div><a href=''></a></div>
-          <br />
-          <div class='sectionContent'>
-            <span>Working on a variety of projects, mostly focused on Web and Mobile with React (Native)</span>
-          </div>
-          <ul class='highlights'>
-            <li>Implemented a MediaUploader component that allows user to upload videos or photos</li>
-            <li>Created a native module that allows us to encode video on Android before ulpload to reduce the size</li>
-          </ul>
-          <div class='separator'></div>
-        </div>
-        <div class="jobBlock">
-          <div class='blockHeader'>
-            <span class='title'>
-              Cercacor Labs - Senior Software Engineer (Mobile/Backend)
-            </span>
-            <span class='date'>
-              May 2018 &mdash; May 2020
-            </span>
-          </div>
-          <div><a href=''></a></div>
-          <br />
-          <div class='sectionContent'>
-            <span>Our most recent project focuses on creating a lifestyle application focused on people that are
-              pre-diabetics or diabetics. It offers meal tracking, insulin and glucose monitoring and educational
-              content.</span>
-          </div>
-          <ul class='highlights'>
-            <li>Lead backend developer, focusing more on system architecture, design and code reviews.</li>
-            <li>Interviewed candidates for our backed team and provided hiring feedback.</li>
-            <li>Started development on the Android app, leveraging modern Android architecture and Kotlin.</li>
-            <li>Provided support for the iOS team, helping them debug issues when using our REST API.</li>
-            <li>Designed and developed a chat system for patients to chat one-on-one with clinicians during the COVID-19
-              emergency.</li>
-          </ul>
-          <div class='separator'></div>
-        </div>
-        <div class="jobBlock">
-          <div class='blockHeader'>
-            <span class='title'>
-              Cercacor Labs - Software Engineer (Backend)
-            </span>
-            <span class='date'>
-              April 2014 &mdash; May 2018
-            </span>
-          </div>
-          <div><a href=''></a></div>
-          <br />
-          <div class='sectionContent'>
-            <span>Ember is a non-invasive tracker that helps high performance athletes monitor their oxygen levels,
-              pulse rate variability and others. </span>
-          </div>
-          <ul class='highlights'>
-            <li>Main developer for the backend system that allowed users to create accounts and synchronize measurement
-              data.</li>
-            <li>Designed our cloud architecture using AWS while maintaining a low operation cost.</li>
-            <li>Successfully migrated our data with zero downtime from MongoDB to Postgres.</li>
-            <li>Created data pipelines to anonymize and copy measurements for data analysis.</li>
-            <li>Led the development in porting our iOS app to Android using React Native</li>
-            <li>The tech stack included Node, Postgres, MongoDB, Couchbase and iOS/Android</li>
-          </ul>
-          <div class='separator'></div>
-        </div>
-        <div class="jobBlock">
-          <div class='blockHeader'>
-            <span class='title'>
-              Cercacor Labs - Software Engineer (Native apps)
-            </span>
-            <span class='date'>
-              August 2012 &mdash; April 2014
-            </span>
-          </div>
-          <div><a href=''></a></div>
-          <br />
-          <div class='sectionContent'>
-            <span>Apps and middleware developer for a medical device and tablet hybrid. The device was capable of taking
-              glucose measurements, pulse rate, and others.</span>
-          </div>
-          <ul class='highlights'>
-            <li>Developed common apps from scratch for our custom Linux OS, such as a wifi settings, calculator, phone
-              and contacts.</li>
-            <li>Contributed to middleware layer design and integration.</li>
-            <li>Designed and implemented connectivity system integration for phone, wifi and data using libraries such
-              as connman, ofono and bluz.</li>
-          </ul>
-          <div class='separator'></div>
-        </div>
-        <div class="jobBlock">
-          <div class='blockHeader'>
-            <span class='title'>
-              University of Veracruz - Web Developer
-            </span>
-            <span class='date'>
-              February 2012 &mdash; August 2012
-            </span>
-          </div>
-          <div><a href=''></a></div>
-          <br />
-          <div class='sectionContent'>
-            <span>The university embarked on a massive migration of all it&#x27;s web pages from a custom CMS to
-              Wordpress. I provided custom plugins and web pages to feed the needs of different departments.</span>
-          </div>
-          <ul class='highlights'>
-            <li>Develop custom plugins to provide directions and weather information.</li>
-            <li>Created custom widgets for site admins to configure the plugins.</li>
-          </ul>
-
-        </div>
-      </div>
-    </div>
-    <div class='sectionLine'></div>
+	</div>
+  <div class='sectionLine'></div>
 
 
 
 
-    <div id='education' class="sectionBlock">
-      <div class='sectionName'>
-        <span>EDUCATION</span>
-      </div>
-      <div class='sectionContent'>
-        <div class='educationBlock'>
-          <span class='title'>
-            Universidad Veracruzana
-          </span>
-          <span class='date'>
-            June 2007 &mdash; February 2012
-          </span>
-          <div class=''>
-            Bachelor - Software Engineering
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class='sectionLine'></div>
-
-    <div id='skills' class="sectionBlock">
-      <div class='sectionName'>
-        <span>SKILLS</span>
-      </div>
-      <div class='sectionContent'>
-        <div class='skillBlock'>
-          <span class='title'>Backend:</span>
-          <span>Nodejs (Hapi, Express, Restify)</span>,
-          <span>Postgres</span>,
-          <span>MongoDB</span>,
-          <span>Couchbase</span>,
-          <span>Redis</span>
-        </div>
-        <div class='skillBlock'>
-          <span class='title'>Frontend:</span>
-          <span>React</span>,
-          <span>HTML</span>,
-          <span>CSS</span>,
-          <span>JavaScript</span>
-        </div>
-        <div class='skillBlock'>
-          <span class='title'>Mobile:</span>
-          <span>Kotlin</span>,
-          <span>Java</span>,
-          <span>Swift</span>,
-          <span>Objective-C</span>,
-          <span>React Native</span>
-        </div>
-        <div class='skillBlock'>
-          <span class='title'>General:</span>
-          <span>C++ (Qt)</span>,
-          <span>Linux</span>,
-          <span>Bash</span>,
-          <span>Git</span>,
-          <span>Docker</span>
-        </div>
-      </div>
-    </div>
-    <div class='sectionLine'></div>
-
-
-
-</body>
-
+	</body>
 </html>
